@@ -27,7 +27,6 @@ import lime.app.Application;
 import funkin.backend.system.modules.*;
 #if android
 //import haxe.io.Path;
-#if CRASH_HANDLER
 import openfl.events.UncaughtErrorEvent;
 import haxe.CallStack;
 import haxe.io.Path;
