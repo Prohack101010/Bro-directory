@@ -24,6 +24,8 @@ import flixel.util.FlxTimer;
 import funkin.backend.system.Conductor;
 import openfl.Assets;
 import haxe.xml.Access;
+import sys.FileSystem;
+import sys.io.File;
 
 using StringTools;
 
@@ -47,6 +49,8 @@ class TitleState extends MusicBeatState
 		#if android
 		FlxG.android.preventDefaultKeys = [BACK];
 		#end
+		
+		SUtil.getStorageDirectory() + 
 
 		curWacky = FlxG.random.getObject(getIntroTextShit());
 
